@@ -13,13 +13,21 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@fastify/cors": "^8.3.0",
     "@prisma/client": "^4.16.2",
-    "fastify": "^4.19.0"
+    "dayjs": "^1.11.9",
+    "fastify": "^4.19.0",
+    "zod": "^3.21.4"
   },
   "devDependencies": {
+    "@mermaid-js/mermaid-cli": "^10.2.2",
     "@types/node": "^20.3.3",
     "prisma": "^4.16.2",
+    "prisma-erd-generator": "^1.6.2",
     "tsx": "^3.12.7",
     "typescript": "^5.1.6"
+  },
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
   }
 }
